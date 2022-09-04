@@ -61,8 +61,7 @@ jobs:
         severity: 'MEDIUM,CRITICAL,HIGH'
 #        format: 'json'
 #        output: 'trivy-results.json'
-        format: 'template'
-        template: '@/contrib/sarif.tpl'
+        format: 'sarif'
         output: 'trivy-results.sarif'
 
     - uses: actions/upload-artifact@v3
