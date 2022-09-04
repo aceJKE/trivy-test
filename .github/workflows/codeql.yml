@@ -60,7 +60,7 @@ jobs:
         docker images
 
     - name: Run Trivy vulnerability scanner
-      uses: aquasecurity/trivy-action
+      uses: aquasecurity/trivy-action@master
       with:
         image-ref: 'acejke/trivy-test:${{ github.sha }}'
         severity: 'MEDIUM,CRITICAL,HIGH'
