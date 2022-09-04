@@ -55,6 +55,9 @@ jobs:
         echo acejke/trivy-test:${{ github.sha }}
         docker build -t acejke/trivy-test:${{ github.sha }} .
         docker images
+    - name: docker images
+      run: |
+        docker images
 
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@7b7aa264d83dc58691451798b4d117d53d21edfe
