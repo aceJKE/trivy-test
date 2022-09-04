@@ -62,7 +62,7 @@ jobs:
     - name: asd
       run: |
         docker pull public.ecr.aws/aquasecurity/trivy:0.31.3
-        trivy image acejke/trivy-test:${{ github.sha }}
+        docker run public.ecr.aws/aquasecurity/trivy:0.31.3 image acejke/trivy-test:${{ github.sha }}
 
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@master
