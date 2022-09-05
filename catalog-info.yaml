@@ -5,6 +5,7 @@ metadata:
   description: some description
   annotations:
     backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: aceJKE/trivy-test
 spec:
   type: service
   owner: test
